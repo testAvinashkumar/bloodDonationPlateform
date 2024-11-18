@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+         version="4">
+
+    <servlet>
+        <servlet-name>Test</servlet-name>
+        <servlet-class>Controllers.Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Test</servlet-name>
+        <url-pattern>//</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FAQ</servlet-name>
+        <servlet-class>Controllers.FaqServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FAQ</servlet-name>
+        <url-pattern>/faq</url-pattern>
+    </servlet-mapping>
+
+    <!--- Blog servlets -->
+    <servlet>
+        <servlet-name>BLOG</servlet-name>
+        <servlet-class>Controllers.Blog.BlogServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BLOG</servlet-name>
+        <url-pattern>/blog</url-pattern>
+    </servlet-mapping>
+    <!--- //// -->
+    <servlet>
+        <servlet-name>AddBlog</servlet-name>
+        <servlet-class>Controllers.Blog.AddBlog</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddBlog</servlet-name>
+        <url-pattern>/addBlog</url-pattern>
+    </servlet-mapping>
+    <!--- Blog servlet -->
+
+
+    <!--- add request servlet -->
+    <servlet>
+        <servlet-name>AddDemande</servlet-name>
+        <servlet-class>Controllers.Demandes.AddDemandeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddDemande</servlet-name>
+        <url-pattern>/addRequest</url-pattern>
+    </servlet-mapping>
+
+    <!--- end of add request servlet -->
+
+    <!--- get requests servlet -->
+    <servlet>
+        <servlet-name>requests</servlet-name>
+        <servlet-class>Controllers.Demandes.RequestsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>requests</servlet-name>
+        <url-pattern>/requests</url-pattern>
+    </servlet-mapping>
+
+    <!--- end of add get requests servlet -->
+
+
+    <servlet>
+        <servlet-name>addEvent</servlet-name>
+        <servlet-class>Controllers.Event.AddEvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addEvent</servlet-name>
+        <url-pattern>/addEvent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Controllers.Login.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>Controllers.Login.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginAdmin</servlet-name>
+        <servlet-class>Controllers.Login.LoginAdmin</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginAdmin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Profile</servlet-name>
+        <servlet-class>Controllers.Donnateur.ProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Profile</servlet-name>
+        <url-pattern>/profile</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>affEvent</servlet-name>
+        <servlet-class>Controllers.Event.AffEvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>affEvent</servlet-name>
+        <url-pattern>/agenda</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Contact</servlet-name>
+        <servlet-class>Controllers.Contact</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Contact</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+
+
+      <servlet>
+          <servlet-name>addDonnateur</servlet-name>
+          <servlet-class>Controllers.Donnateur.AddDonnateur</servlet-class>
+      </servlet>
+
+      <servlet-mapping>
+          <servlet-name>addDonnateur</servlet-name>
+          <url-pattern>/addDonnateur</url-pattern>
+          <url-pattern>/registre</url-pattern>
+      </servlet-mapping>
+
+      <servlet>
+          <servlet-name>updateDonnateur</servlet-name>
+          <servlet-class>Controllers.Donnateur.UpdateDonnateur</servlet-class>
+      </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updateDonnateur</servlet-name>
+        <url-pattern>/updateDonnateur</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteDonnateur</servlet-name>
+        <servlet-class>Controllers.Donnateur.DeleteDonnateur</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>deleteDonnateur</servlet-name>
+        <url-pattern>/deleteDonnateur</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteProfile</servlet-name>
+        <servlet-class>Controllers.Donnateur.Delete</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteProfile</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteRequest</servlet-name>
+        <servlet-class>Controllers.Demandes.DeleteRequest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>deleteRequest</servlet-name>
+        <url-pattern>/deleteRequest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>closeRequest</servlet-name>
+        <servlet-class>Controllers.Demandes.CloseRequest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>closeRequest</servlet-name>
+        <url-pattern>/closeRequest</url-pattern>
+    </servlet-mapping>
+
+    <!-- stock management -->
+    <servlet>
+        <servlet-name>AddStock</servlet-name>
+        <servlet-class>Controllers.stock.AddStock</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddStock</servlet-name>
+        <url-pattern>/addstock</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteStock</servlet-name>
+        <servlet-class>Controllers.stock.deleteStock</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteStock</servlet-name>
+        <url-pattern>/deletestock</url-pattern>
+    </servlet-mapping>
+    <!-- stock management -->
+    
+    <!--crud Centre-->
+    <servlet>
+        <servlet-name>addCentre</servlet-name>
+        <servlet-class>Controllers.Centre.AddCentre</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addCentre</servlet-name>
+        <url-pattern>/addCentre</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>updateCentre</servlet-name>
+        <servlet-class>Controllers.Centre.UpdateCentre</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateCentre</servlet-name>
+        <url-pattern>/updateCentre</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deleteCentre</servlet-name>
+        <servlet-class>Controllers.Centre.DeleteCentre</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteCentre</servlet-name>
+        <url-pattern>/deleteCentre</url-pattern>
+    </servlet-mapping>
+    <!--crud Centre-->
+    
+    <!--dashBoardAdmin-->
+    <servlet>
+        <servlet-name>dashBoardAdmin</servlet-name>
+        <servlet-class>Controllers.Admin.DashBoardAdmin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dashBoardAdmin</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+    <!--dashBoardAdmin-->
+
+
+    <!-- statistics -->
+    <servlet>
+        <servlet-name>Statistics</servlet-name>
+        <servlet-class>Controllers.Statistics</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Statistics</servlet-name>
+        <url-pattern>/statistics</url-pattern>
+    </servlet-mapping>
+
+    <!-- end of statistics -->
+
+    <!-- About Us -->
+    <servlet>
+        <servlet-name>aboutUs</servlet-name>
+        <servlet-class>Controllers.AboutUs</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>aboutUs</servlet-name>
+        <url-pattern>/about</url-pattern>
+    </servlet-mapping>
+
+    <!-- end of ABout Us -->
+
+</web-app>
